@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jQ1-bc-uCU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule-->
+        <scene sceneID="F22-JC-dBW">
+            <objects>
+                <viewController id="mvc-XC-1Sd" userLabel="Schedule" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kbU-ei-KGA"/>
+                        <viewControllerLayoutGuide type="bottom" id="sMw-MY-GNy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3RD-KU-ZQf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Schedule" id="pwm-O4-ObP" userLabel="Schedule"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rOM-iL-aFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="94"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="drZ-NM-cMn">
+            <objects>
+                <viewController id="ixH-MJ-xMp" userLabel="Home" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="olt-AH-oAG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kqu-Tf-9y4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M32-JY-sJX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4d-55-BOQ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="qXf-If-lW6"/>
+                                </constraints>
+                                <state key="normal" title="Stop"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzw-ab-v56">
+                                <state key="normal" title="Stop"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIQ-K9-5pb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="zYi-VO-64i"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iIQ-K9-5pb" firstAttribute="centerX" secondItem="mzw-ab-v56" secondAttribute="centerX" id="8BB-ts-eZS"/>
+                            <constraint firstItem="k4d-55-BOQ" firstAttribute="firstBaseline" secondItem="mzw-ab-v56" secondAttribute="baseline" id="DpW-nk-sz1"/>
+                            <constraint firstItem="k4d-55-BOQ" firstAttribute="baseline" secondItem="mzw-ab-v56" secondAttribute="firstBaseline" id="HAV-J9-KRx"/>
+                            <constraint firstItem="iIQ-K9-5pb" firstAttribute="centerX" secondItem="M32-JY-sJX" secondAttribute="centerX" id="Hj4-iY-EqS"/>
+                            <constraint firstItem="iIQ-K9-5pb" firstAttribute="leading" secondItem="M32-JY-sJX" secondAttribute="leadingMargin" constant="95" id="LHV-SR-TPh"/>
+                            <constraint firstItem="k4d-55-BOQ" firstAttribute="leading" secondItem="mzw-ab-v56" secondAttribute="leading" id="aeJ-zy-2Pg"/>
+                            <constraint firstItem="k4d-55-BOQ" firstAttribute="top" secondItem="mzw-ab-v56" secondAttribute="top" id="fBX-o1-B7m"/>
+                            <constraint firstItem="iIQ-K9-5pb" firstAttribute="centerX" secondItem="k4d-55-BOQ" secondAttribute="centerX" id="ghc-qV-3wr"/>
+                            <constraint firstItem="iIQ-K9-5pb" firstAttribute="top" secondItem="olt-AH-oAG" secondAttribute="bottom" constant="152" id="j6H-T7-lLT"/>
+                            <constraint firstItem="Kqu-Tf-9y4" firstAttribute="top" secondItem="k4d-55-BOQ" secondAttribute="bottom" constant="219" id="mLS-HO-AI8"/>
+                            <constraint firstItem="mzw-ab-v56" firstAttribute="top" secondItem="iIQ-K9-5pb" secondAttribute="bottom" constant="51" id="xPU-DJ-5qP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="KC7-NK-v56" userLabel="Home"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zzr-gu-tpi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="-561.76911544227892"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="78S-tD-AbK">
+            <objects>
+                <tabBarController id="jQ1-bc-uCU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="wOt-LB-pT7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ixH-MJ-xMp" kind="relationship" relationship="viewControllers" id="9Kf-WA-6x3"/>
+                        <segue destination="mvc-XC-1Sd" kind="relationship" relationship="viewControllers" id="tdo-U8-t9D"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y3O-7c-DMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-830" y="-233"/>
+        </scene>
+    </scenes>
+</document>

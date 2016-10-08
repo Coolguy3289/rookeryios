@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Jukebox (0.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Jukebox (~> 0.2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Jukebox: 7526061487018bb66e687cd38abf8c637901b78f
+
+PODFILE CHECKSUM: 62ec851d0208d9bec385b1701644be48b3151e0a
+
+COCOAPODS: 1.0.1
